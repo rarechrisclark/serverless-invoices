@@ -4,8 +4,9 @@
   "private": false,
   "scripts": {
     "serve": "vue-cli-service serve",
-    "build": "vue-cli-service build",
-    "lint": "vue-cli-service lint"
+    "build": "npm run config && vue-cli-service build",
+    "lint": "vue-cli-service lint",
+    "config": "cp src/config/app.config.example.js src/config/app.config.js"
   },
   "dependencies": {
     "@panter/vue-i18next": "^0.15.2",
